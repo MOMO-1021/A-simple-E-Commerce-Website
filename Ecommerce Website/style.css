@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Distressed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to left, #1b7d40 , #aea495, #7171b5);
+    transition: background-color 0.5s ease-in;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 121px;
+}
+.navBar h3{
+    font-size: 28px;
+    margin-right: 33px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+.navBar a{
+    text-decoration: none;
+    color: #645656;
+}
+.navBar a:hover{
+    font-size: 40px;
+    font-family: "Quattrocento", sans-serif;
+    color: #80349eba;
+}
+.logo{
+    width: 150px;
+    height: 115px;
+    margin: 1px;
+    cursor: pointer;
+}
+.itemList{
+    display: none;
+}
+.itemList ul{
+    display: flex;
+    margin: 61px 101px;
+    gap: 28px;
+}
+.itemList li{
+    font-size: 20px;
+    list-style: none;
+    margin-right: 34px;
+    cursor: pointer;
+    position: relative;
+}
+.itemList li::after{
+    content: '';
+    right: 0;
+    bottom: -7px;
+    width: 0;
+    background-color: rgb(39, 69, 78);
+    transition: width 0.2s;
+    height: 2px;
+    position: absolute;
+}
+.itemList li:hover{
+    transform: scale(1.2);
+    /* The transform property applies a 2D or 3D transformation to an element. 
+    This property allows you to rotate, scale, move, skew, etc., elements. */
+}
+.itemList li:hover:after{
+    width: 100%;
+}
+div.Coats{
+    margin-top: 81px;
+}
+div.Coats img{
+    width: 10rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Coats img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Coats{
+    display: none;
+}
+.first-items, .second-items, .third-items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.image-info{
+    margin-top: 21px;
+    margin-left: 72px;
+}
+.image-info a{
+    text-decoration: none;
+    color: #2b2825db;
+}
+div.Shoes{
+    margin-top: 81px;
+}
+div.Shoes img{
+    width: 10rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Shoes img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Shoes{
+    display: none;
+}
+div.Trousers{
+    margin-top: 81px;
+}
+div.Trousers img{
+    width: 12rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Trousers img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Trousers {
+    display: none;
+}
+div.Sunglasses{
+    margin-top: 81px;
+}
+div.Sunglasses img{
+    width: 12.5rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Sunglasses img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Sunglasses{
+    display: none;
+}
+div.Belts{
+    margin-top: 81px;
+    display: none;
+}
+div.Belts img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Belts img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+h5{
+    margin: 3px 24px;
+}
+div.Watches{
+    margin-top: 81px;
+    display: none;
+}
+div.Watches img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Watches img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Hats img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Hats img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Hats{
+    margin-top: 81px;
+    display: none;
+}
+.Hats h5{
+    margin: 8px 24px;
+    font-size: 1.5rem;
+}
+.Hats a:hover{
+    text-shadow: 6px 2px 5px rgb(237, 181, 157);
+}
+div.Sandals img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Sandals img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Sandals{
+    margin-top: 81px;
+    display: none;
+}
+.Sandals h5{
+    font-size: 1.2rem;
+}
+div.Sarees img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Sarees img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Sarees{
+    margin-top: 81px;
+    display: none;
+}
+.Sarees h5{
+    font-size: 1.2rem;
+}
+div.Lungi img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Lungi img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Lungi{
+    margin-top: 81px;
+    display: none;
+}
+.Lungi h5{
+    font-size: 1.2rem;
+}
+div.Gowns img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Gowns img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Gowns{
+    margin-top: 81px;
+    display: none;
+}
+.Gowns h5{
+    font-size: 1.2rem;
+}
+.Gowns a:hover{
+    text-shadow: 3px 3px 7px #323252;
+}
+div.Frocks img{
+    width: 11rem;
+    height: auto;
+    margin: 0px 34px;
+}
+div.Frocks img:hover{
+    box-shadow: 0 0 22px #1d1d22;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+div.Frocks{
+    margin-top: 81px;
+    display: none;
+}
+.Frocks h5{
+    font-size: 1.2rem;
+}
+.Frocks a:hover{
+    text-shadow: 3px 3px 7px #323252;
+}
+.tutorialVideo{
+    margin-left: 20%;
+    border-style: none;
+    display: none;
+    margin-bottom: 34px;
+}
+.hiddenContent p{
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    font-size: 34px;
+    margin-top: 100px;
+}
+.first{
+    color: #494988;
+}
+.second{
+    color: #9b6e2c;;
+}
+.third{
+    color: #2a6641;
+}
+.main{
+    color: #f5b003;
+    position: relative;
+}
+/* :: after is a pseudo element. */
+/* Know that pseudo classes and pseudo elements are different! */
+/* Pseudo Element - A CSS pseudo-element is used to style specific parts of an element. */
+/* Pseudo class - A pseudo-class is used to define a special state of an element. */
+.main::after{
+    content: '';
+    width: 230px;
+    background-color: #886436;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    right: 2px;
+}
+.displayButton{
+    font-size: 5rem;
+    width: 19rem;
+    height: 7rem;
+    padding: 10px 15px;
+    font-family: 'Oxanium', sans-serif;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background:rgb(34 96 142 / 35%);
+    cursor: pointer;
+    color: #bd762d;;
+}
+.displayButton:hover{
+    background: rgb(14 121 200 / 85%);
+    color: #fa840a;
+}
+.right{
+    width: 100px;
+    height: 100px;
+}
+.left{
+    width: 100px;
+    height: 100px;
+}
+.buttonPart{
+    display: flex;
+    gap: 100px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 122px;
+}
+.hint{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 119px;
+    margin-bottom: 51px;
+    margin-right: 43px;
+}
+.hint p{
+    display: none;
+    font-family: 'Akaya Kanadaka', sans-serif;
+    font-size: 3rem;
+    color: azure;
+    text-align: center;
+}
+.hint img{
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+footer{
+    display: none;
+    font-size: 1.1rem;
+    margin-left: 208px;
+    margin-top: 11rem;
+    
+}
+img{
+    width: 50px;
+    height: 40px;
+}
+.divFooter{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    
+    color: black;
+    width: 100%;
+}
+.logo,.Sm{
+    grid-column: span 2;
+}
+.cService{
+    grid-column: span 2;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 104px;
+    height: 85px;
+    margin-left: 100px;
+    margin-bottom: 36px;
+}
+.Sm{
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    margin-right: 336px;
+    padding-top: 30px;
+}
+.ES{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 53px;
+    width: 100vh;
+}
+
